@@ -16,11 +16,15 @@
     --font-action: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 160;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -176,6 +180,7 @@ header{
     top: 0;
     right: -20rem;
     transition: 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -572,4 +577,52 @@ header{
     text-transform: uppercase;
     padding: 1rem;
     grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secondary);
+    color: #eeeeee;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #eeeeee;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 3rem;
+    bottom: 3rem;
+    background: #f953c6;
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6); 
+    background: linear-gradient(to right, #b91d73, #f953c6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0.1rem 0.6rem #0000009;
 }
